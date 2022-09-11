@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "name": "dad-jokes-api-project",
+  "version": "1.0.0",
+  "description": "\"Joke generator website built using 'https://icanhazdadjoke.com/api' \"",
+  "main": "main.js",
+  "devDependencies": {
+    "eslint": "^8.23.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "\"https://github.com/graycrovv\"",
+  "license": "ISC"
+}

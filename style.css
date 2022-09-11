@@ -1,0 +1,275 @@
+/* general */
+html {
+  height: 100vh;
+}
+body {
+  display: grid;
+  max-height: 100vh;
+  overflow: hidden;
+  font-size: 10px;
+  font-family: "Oxygen", sans-serif;
+  background-color: black;
+  color: lavenderblush;
+  animation: main 4s linear 4s none;
+}
+
+/* transistion from "title" screen to main */
+@keyframes main {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* TITLE SCREEN ANIMATION*/
+.intro {
+  height: 100vh;
+  width: 100vw;
+  color: white;
+}
+
+.intro p {
+  font-size: 3rem;
+  text-align: center;
+  line-height: 100vh;
+  animation: intro 5s linear forwards;
+}
+
+p .glitchB {
+  position: fixed;
+  animation: glitchB 5s linear forwards;
+}
+
+p .glitchD {
+  animation: glitchD 5s linear forwards;
+}
+@keyframes intro {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes glitchB {
+  0% {
+    opacity: 0;
+  }
+
+  19% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  34% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  54% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes glitchD {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+  18% {
+    opacity: 1;
+  }
+  19% {
+    opacity: 0;
+  }
+  34% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+  48% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 0;
+  }
+  53% {
+    opacity: 0;
+  }
+  54% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* MAIN SCREEN*/
+
+/* TITLE: */
+.title {
+  text-align: center;
+  font-size: 4rem;
+  color: white;
+}
+.title .B {
+  position: fixed;
+  animation: letterB 9s infinite linear both;
+}
+.title .D {
+  animation: letterD 9s infinite linear both;
+}
+@keyframes letterB {
+  0% {
+    opacity: 0;
+  }
+  74% {
+    opacity: 0;
+    color: white;
+  }
+  75% {
+    opacity: 1;
+    color: #691a1a;
+  }
+  77% {
+    opacity: 1;
+    color: #691a1a;
+  }
+  78% {
+    opacity: 0;
+    color: white;
+  }
+  79% {
+    opacity: 1;
+    color: #691a1a;
+  }
+  80% {
+    opacity: 0;
+    color: white;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes letterD {
+  0% {
+    opacity: 1;
+  }
+  74% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  77% {
+    opacity: 0;
+  }
+  78% {
+    opacity: 0.5;
+  }
+  79% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* JOKE SECTION */
+.screen {
+  margin: 3rem 8rem;
+  height: 50vh;
+  font-size: 2.6rem;
+}
+.screen .border {
+  display: inline-block;
+  padding: 1rem;
+  box-shadow: 5px 5px 5px gray;
+  border-radius: 1rem;
+}
+
+.screen div p {
+  display: inline;
+  line-height: 3rem;
+}
+
+/* BUTTON */
+
+.start {
+  all: unset;
+  display: block;
+  opacity: 0.7;
+  margin: -5% 5% 0 70%;
+  padding: 1rem 2rem;
+  font-size: 2.6rem;
+  text-align: right;
+  text-transform: uppercase;
+  border: 2px white solid;
+  border-radius: 1rem;
+  transition: 0.7s;
+}
+.start:hover {
+  margin-left: 67%;
+  opacity: 1;
+  background-color: #691a1a;
+}
+
+/* it will be removed later from SCREEN section using JS */
+.hidden {
+  opacity: 0;
+}
+
+/* ADD MEDIA QUERIES IN THE FUTURE */
