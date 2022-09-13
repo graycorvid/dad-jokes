@@ -16,3 +16,10 @@ Made with: https://icanhazdadjoke.com/api
 
 ## Future updates
 CSS file will be updated with **Media Queries** in the future (in order to apply ***Responsive Web Design (RWD)*** principles). 
+
+***1. Media queries have been added.***
+
+***Currently some problems with behaviour of animated letter 'B'***
+
+Project still in progress.
+
