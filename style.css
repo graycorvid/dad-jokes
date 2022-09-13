@@ -1,8 +1,11 @@
-/* general */
+/* general*/
+/* DESKTOP*/
 html {
   height: 100vh;
 }
 body {
+  height: 100vh;
+  min-height: 280px;
   font-size: 10px;
   font-family: "Oxygen", sans-serif;
   background-color: black;
@@ -14,6 +17,10 @@ body {
   max-height: 100vh;
   overflow: hidden;
   animation: main 4s linear 4s none;
+}
+
+.wrap main {
+  height: 60vh;
 }
 
 /* transistion from "title" screen to main */
@@ -255,7 +262,7 @@ p .glitchD {
   all: unset;
   display: block;
   opacity: 0.7;
-  margin: -5% 5% 0 70%;
+  margin: -5% 5% 0 65%;
   padding: 1rem 1rem;
   font-size: 2.6rem;
   text-align: right;
@@ -270,39 +277,7 @@ p .glitchD {
   opacity: 0;
 }
 
-/* ADD MEDIA QUERIES IN THE FUTURE */
-@media (max-width: 479px) {
-  .wrap {
-    max-width: 479px;
-    overflow: hidden;
-  }
-
-  .title {
-    padding-top: 10%;
-    font-size: 2rem;
-  }
-
-  .start {
-    margin: -10% 20% 0 20%;
-    text-align: center;
-    font-size: 1rem;
-    opacity: 1;
-  }
-
-  .screen {
-    margin: 20% 20%;
-    height: 45vh;
-    font-size: 1rem;
-  }
-  .screen .border {
-    padding: 1rem;
-    box-shadow: 4px 4px 4px gray;
-  }
-
-  .screen div p {
-    line-height: 1rem;
-  }
-}
+/* LANDSCAPE*/
 
 @media (max-width: 767px) and (orientation: landscape) {
   header {
@@ -317,11 +292,11 @@ p .glitchD {
     line-height: 60vh;
   }
   .title {
-    padding-top: 2%;
-    font-size: 2rem;
+    padding: 2% 0;
+    font-size: 2.5rem;
   }
   .screen {
-    margin: 2% 20%;
+    margin: 10% 20%;
     height: 30vh;
     font-size: 1rem;
   }
@@ -329,14 +304,12 @@ p .glitchD {
     padding: 0.8rem;
     box-shadow: 4px 4px 4px gray;
   }
-
   .screen div p {
     line-height: 1rem;
   }
-
   .start {
     margin: 0 35% 5% 35%;
-    padding: 0;
+    padding: 0.5rem 0;
     text-align: center;
     font-size: 1rem;
     border: 1px white solid;
@@ -344,6 +317,155 @@ p .glitchD {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+  .wrap {
+    height: 100vh;
+    max-width: 1023px;
+    overflow: hidden;
+  }
+  .wrap main {
+    height: 55vh;
+  }
+  .intro p {
+    font-size: 4rem;
+    line-height: 60vh;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  .screen {
+    margin: 2% 15%;
+    height: 30vh;
+    font-size: 1.4rem;
+  }
+  .screen .border {
+    padding: 1rem;
+    box-shadow: 5px 5px 5px gray;
+  }
+  .screen div p {
+    line-height: 1.4rem;
+  }
+
+  .start {
+    margin: 0 35% 5% 35%;
+    padding: 1rem 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    border: 1px white solid;
+    opacity: 1;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  .start {
+    margin: -5% 5% 0 65%;
+    padding: 1rem 1rem;
+    text-align: right;
+    font-size: 1.4rem;
+    border: 1px white solid;
+    opacity: 1;
+  }
+}
+
+@media (min-width: 1024px) and (max-height: 500px) and (orientation: landscape) {
+  .wrap {
+    min-height: 500px;
+  }
+
+  .wrap main {
+    margin-top: -10%;
+  }
+  .start {
+    font-size: 2rem;
+    opacity: 1;
+  }
+}
+@media (min-width: 1280px) and (max-height: 950px) and (orientation: landscape) {
+  .start {
+    opacity: 1;
+  }
+}
+/*PORTRAIT*/
+@media (max-width: 539px) and (orientation: portrait) {
+  .wrap {
+    max-width: 512px;
+    overflow: hidden;
+  }
+  .title {
+    padding-top: 10%;
+    font-size: 2.5rem;
+  }
+  .screen {
+    margin: 10% 15% 20% 15%;
+    height: 45vh;
+    font-size: 1.4rem;
+  }
+  .screen .border {
+    margin-bottom: 10%;
+    padding: 1rem;
+    box-shadow: 4px 4px 4px gray;
+  }
+  .screen div p {
+    line-height: 1rem;
+  }
+  .start {
+    margin: -10% 20% 0 20%;
+    text-align: center;
+    font-size: 0.8rem;
+    opacity: 1;
+  }
+}
+@media (min-width: 540px) and (max-width: 1024px) and (orientation: portrait) {
+  .wrap {
+    max-width: 1024px;
+    overflow: hidden;
+  }
+  .title {
+    padding-top: 10%;
+    font-size: 3.5rem;
+  }
+  .screen {
+    margin: 10% 20% 20% 20%;
+    height: 45vh;
+    font-size: 1.6rem;
+  }
+  .screen .border {
+    margin-bottom: 10%;
+    padding: 1rem;
+    box-shadow: 4px 4px 4px gray;
+  }
+  .screen div p {
+    line-height: 1rem;
+  }
+  .start {
+    margin: -10% 20% 0 20%;
+    text-align: center;
+    font-size: 1.3rem;
+    opacity: 1;
+  }
+}
+@media (min-width: 1024px) and (min-height: 1200px) and (orientation: portrait) {
+  .title {
+    padding-top: 10%;
+    font-size: 4.5rem;
+  }
+  .screen {
+    height: 50vh;
+    font-size: 2rem;
+  }
+  .screen .border {
+    padding: 1rem 2rem;
+  }
+  .screen div p {
+    line-height: 2rem;
+  }
+  .start {
+    margin: -10% 20% 0 20%;
+    text-align: center;
+    font-size: 2rem;
+    opacity: 1;
+  }
+}
 @media (hover: hover) and (pointer: fine) {
   .start:hover {
     margin-left: 67%;
