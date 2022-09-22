@@ -13,5 +13,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "\"https://github.com/graycrovv\"",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/graycrovv/dad-jokes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/graycrovv/dad-jokes/issues"
+  },
+  "homepage": "https://github.com/graycrovv/dad-jokes#readme"
 }
